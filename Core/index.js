@@ -1,4 +1,6 @@
 
-import Core from "./part1.js"
-const core = new Core()
-core.method1()
+import Core from "./part1.js";
+const core = new Core();
+core.intro();
+
+core.func1();
