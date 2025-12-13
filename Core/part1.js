@@ -114,7 +114,20 @@ export default class Core {
         // pemdas can also be applied for boolean
         console.log( (true && false) || true)
 
-        
 
+        // asignment
+        let num = 0 // assigned value
+        num = 5 // reassignment
+
+        num += 5 // add
+        num -= 2 // subtract
+        console.log(num)
+
+        num++ //increment
+        console.log(num)
+        num-- //deecrement
+        console.log(num)
+
+        
     }
 }
