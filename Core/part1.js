@@ -182,4 +182,24 @@ export default class Core {
 
 
     }
+
+    func5(){
+
+        const user = {
+            name : "Linus Torvalds",
+            age : 42,
+            distros : ["Ubuntu", "Arch", "Fedora", "ParrotOS", "Debian", "Kali"]
+        }
+        for (const [key, value] of Object.entries(user)){ 
+            if (!(value instanceof Array)) {
+                console.log(`${key}:\t${value}`);
+            }else{
+                console.log(`${key}:`);
+                for (const item of value) {
+                    console.log(`\t- ${item}`);
+                }
+            }
+        }
+
+    }
 }
