@@ -4,3 +4,4 @@ const core = new Core();
 core.intro();
 
 core.func1();
+core.func2();

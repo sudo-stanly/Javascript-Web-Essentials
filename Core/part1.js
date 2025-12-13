@@ -18,4 +18,50 @@ export default class Core {
         console.log(number ** num / num2, (num > num2) ? true : false)
         
     }
+
+    func2(){
+
+        // data types
+        let str = "Hello, World!";
+        let num = 0;
+        let floatNum = 1.1;
+
+        console.log(`string:\t${str}\nnumber:\t${num}\nfloat:\t${floatNum}`);
+
+
+        // logical reasoning
+        str = "I am a string" + 12345;
+        console.log(`This will convert the number into a string since in js the "+" operator concatonates a string if the first or second operand is a string if both is a number it adds both operands that is a number\nbut since the first operand is a string and the second operand is a number it will join as a string.\nexample: ${str}`);
+
+
+        // type casting
+        let num1 = "8";
+        let num2 = "32";
+        console.log(`\nwe can use type casting to convert a value to a specific datatype like adding string numbers.\nexample: Number("${num1}") + Number("${num2}") = ${Number(num1) + Number(num2)}`);
+
+
+        // there are several data types in js
+        let dt = null               // null
+        dt = ""                     // string
+        dt = 123                    // numnber
+        dt = 123456789123456        // bigInt
+        dt = true                   // boolean
+        dt = []                     // array
+        dt = { key : value }        // object
+        dt = new Date()             // class object
+        dt = undefined
+
+
+        // null data type represents absence of a value in a variable or if a variable is empty
+        // string represents represents sequences of characters
+        // number is a datatype in javascript that represents integer or floating number, in js numbers are always stored as floating point
+        // bigInt represents large numbers
+        // boolean represents if value is true or false
+        // an array is a data type that stores values or elements
+        // an object is a key : value pair data type
+        // date is a class object
+        // undefined represents an empty value of a variable
+    }
+
+
 }
