@@ -5,3 +5,4 @@ core.intro();
 
 core.func1();
 core.func2();
+core.func3();

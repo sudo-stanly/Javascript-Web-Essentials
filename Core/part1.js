@@ -16,7 +16,6 @@ export default class Core {
         var num2 = 2;         // var is old
 
         console.log(number ** num / num2, (num > num2) ? true : false)
-        
     }
 
     func2(){
@@ -99,9 +98,23 @@ export default class Core {
         // false is 0
         txt = false;
         console.log(`[ Undefined ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
-
-        
     }
 
+    func3(){
+        
+        // operators
+        console.log(32 + 8)
+        console.log(32 - 8)
+        console.log(32 * 8)
+        console.log(32 ** 8)
 
+        // pemdas
+        console.log( (10 - 10) + 10 - 5 / 2)
+
+        // pemdas can also be applied for boolean
+        console.log( (true && false) || true)
+
+        
+
+    }
 }
