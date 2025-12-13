@@ -1,8 +1,8 @@
 
 export default class Core {
-    // constructor(){
-        
-    // }
+    constructor(){
+        this.variable = 123   
+    }
 
     intro(){
         console.log("There is no \"hello world\", only - bugs and coffee -.")
@@ -142,6 +142,44 @@ export default class Core {
             console.log("Hello")
         }
         console.log("No")
+
+
+        console.log(this.variable)
+    }
+
+    func4(){
+
+        // let str = "apple"
+        // let list = []
+        // list.push(str)
+        
+        // console.log(list)
+
+        const LIST = [];
+        const DUPS = [];
+
+        while (true){
+            const user = prompt("| x to exit | Enter an item: ");
+
+            if(!user){ continue };         
+            if(user.toLowerCase() === 'x'){ break };
+
+            LIST.push(user);
+        }
+
+        for(const item of LIST){
+            if(!DUPS.includes(item)){
+                DUPS.push(item);
+            }
+        }
+        for(const i in DUPS){
+            console.log(DUPS[i]);
+        }
+
+        
+            
+            
+
 
     }
 }
