@@ -41,15 +41,15 @@ export default class Core {
 
 
         // there are several data types in js
-        let dt = null               // null
-        dt = ""                     // string
-        dt = 123                    // numnber
-        dt = 123456789123456        // bigInt
-        dt = true                   // boolean
-        dt = []                     // array
-        dt = { key : value }        // object
-        dt = new Date()             // class object
-        dt = undefined
+        let dt = null;               // null
+        dt = "";                    // string
+        dt = 123;                    // numnber
+        dt = 123456789123456;        // bigInt
+        dt = true;                   // boolean
+        dt = [];                // array
+        // dt = { key : value }  ;      // object
+        dt = new Date()   ;          // class object
+        dt = undefined;
 
 
         // null data type represents absence of a value in a variable or if a variable is empty
@@ -61,6 +61,46 @@ export default class Core {
         // an object is a key : value pair data type
         // date is a class object
         // undefined represents an empty value of a variable
+
+
+        // booleans
+
+        // non-empty string is True
+        let txt = "Hello";
+        console.log(`Everything is a boolean.\n[ Non-empty String ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+
+        // empty string is False
+        txt = "";
+        console.log(`[ Empty String ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+
+        // non zero number is true
+        txt = 1;
+        console.log(`[ Number > 0 ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+
+        // zero number is false
+        txt = 0;
+        console.log(`[ Number == 0 ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+        // null is false
+        txt = null;
+        console.log(`[ Null ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+        // undefined is false
+        txt = undefined;
+        console.log(`[ Undefined ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+        // true is 1
+        txt = true;
+        console.log(`[ Undefined ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+        // false is 0
+        txt = false;
+        console.log(`[ Undefined ]\t'${txt}' -> ${typeof(txt)} : ${Boolean(txt)}`);
+
+        
     }
 
 
