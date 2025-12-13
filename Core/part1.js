@@ -103,31 +103,45 @@ export default class Core {
     func3(){
         
         // operators
-        console.log(32 + 8)
-        console.log(32 - 8)
-        console.log(32 * 8)
-        console.log(32 ** 8)
+        console.log(32 + 8);
+        console.log(32 - 8);
+        console.log(32 * 8);
+        console.log(32 ** 8);
 
         // pemdas
-        console.log( (10 - 10) + 10 - 5 / 2)
+        console.log( (10 - 10) + 10 - 5 / 2);
 
         // pemdas can also be applied for boolean
-        console.log( (true && false) || true)
+        console.log( (true && false) || true);
 
 
         // asignment
-        let num = 0 // assigned value
-        num = 5 // reassignment
+        let num = 0; // assigned value
+        num = 5; // reassignment
 
-        num += 5 // add
-        num -= 2 // subtract
-        console.log(num)
+        num += 5;// add
+        num -= 2; // subtract
+        console.log(num);
 
         num++ //increment
-        console.log(num)
+        console.log(num);
         num-- //deecrement
-        console.log(num)
+        console.log(num);
 
         
+
+        // condition
+        let c = 5 < 10 && ("20" === "20"); // The strict equality operator performs a strict comparison, meaning it checks both the value and the type of the operands
+        console.log(c);
+
+        c = 20 == "20"; // The equality operator performs a loose comparison, meaning it coerces operands to a common type before comparing their values.
+        console.log(c);
+
+
+        if(5 > 10){
+            console.log("Hello")
+        }
+        console.log("No")
+
     }
 }
