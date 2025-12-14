@@ -240,21 +240,28 @@ export default class Core {
         }
 
 
-        let people = ["Mark Zuckerburg", "Linus Torvalds", "Van Rossum"]
-        console.log("PEOPLE:")
+        let people = ["Mark Zuckerburg", "Linus Torvalds", "Van Rossum"];
+        console.log("PEOPLE:");
         people.forEach((PEOPLE)=>{
-            console.log(`\t${PEOPLE}`)
+            console.log(`\t${PEOPLE}`);
         })
 
 
-        let numbers = [8, 16, 24, 32, 40, 48]
+        let numbers = [8, 16, 24, 32, 40, 48];
         let rest = numbers.map(number => number * 10);
-        console.log(rest)
+        console.log(rest);
 
         for(let num of numbers){
-            console.log(num * 10)
+            console.log(num * 10);
         }
 
+
+
+        let palindrome = ["level", "radar", "civic", "madam", "racecar", "deified", "noon", "rotor", "kayak", "refer"];
+        console.log(`current: ${palindrome}`)
+        let removeIndex = palindrome.indexOf("kayak")
+        let remove = palindrome.splice(removeIndex, 1);
+        console.log(`removed: ${remove}\nupdated: ${palindrome}`)
 
     }
 }
