@@ -208,4 +208,53 @@ export default class Core {
         console.log(f(10, 20))
         
     }
+
+    func7(){
+
+        // array methods
+
+        let languages = ["Javascript", "C++", "Java", "Python", "Go", "Php", "mySQL"];
+        console.log("ARRAY:");
+        for(const [index, value] of languages.entries()){
+            console.log(`\t[${index + 1}] : ${value}`);
+        }
+
+        let backend = ["Php", "mySQl", "DJango", "Flask"]
+        for(const index in backend){
+            console.log(`[${Number(index) + 1}] : ${backend[index]}`);
+        }
+
+
+        let ages = [20, 25, 30, 35, 40];
+        const result = ages.filter(age => age >= 18);
+        console.log(result);
+
+        let adults = [];
+        for(let age of ages){
+            if(age >= 18){
+                adults.push(age);
+            }
+        }
+        for(let adult of adults){
+            console.log(`ADULT: ${adult}`);
+        }
+
+
+        let people = ["Mark Zuckerburg", "Linus Torvalds", "Van Rossum"]
+        console.log("PEOPLE:")
+        people.forEach((PEOPLE)=>{
+            console.log(`\t${PEOPLE}`)
+        })
+
+
+        let numbers = [8, 16, 24, 32, 40, 48]
+        let rest = numbers.map(number => number * 10);
+        console.log(rest)
+
+        for(let num of numbers){
+            console.log(num * 10)
+        }
+
+
+    }
 }
