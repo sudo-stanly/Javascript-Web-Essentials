@@ -258,10 +258,26 @@ export default class Core {
 
 
         let palindrome = ["level", "radar", "civic", "madam", "racecar", "deified", "noon", "rotor", "kayak", "refer"];
-        console.log(`current: ${palindrome}`)
-        let removeIndex = palindrome.indexOf("kayak")
+        console.log(`current: ${palindrome}`);
+        let removeIndex = palindrome.indexOf("kayak");
         let remove = palindrome.splice(removeIndex, 1);
-        console.log(`removed: ${remove}\nupdated: ${palindrome}`)
+        console.log(`removed: ${remove}\nupdated: ${palindrome}`);
+
+
+        // indexof
+        let findValue = "noon";
+        let found = false;
+        for(let [index, value] of palindrome.entries()){
+            if(value == findValue){
+                console.log(`the index of this item is [${index}] :`);
+
+                found = true;
+                break;
+            }
+        }
+        if(!found){
+            console.log("no item found")
+        }
 
     }
 }
