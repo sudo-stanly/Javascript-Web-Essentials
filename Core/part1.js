@@ -200,6 +200,12 @@ export default class Core {
                 }
             }
         }
+    }
 
+    func6(){
+
+        const f = (a, b) => a * b;
+        console.log(f(10, 20))
+        
     }
 }
