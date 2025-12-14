@@ -265,16 +265,22 @@ export default class Core {
 
 
         // indexof
-        let findValue = "noon";
+        let indexOf = "noon";
         let found = false;
-        for(let [index, value] of palindrome.entries()){
-            if(value == findValue){
-                console.log(`the index of this item is [${index}] :`);
+        let INDEX = 0;
 
+        for(let [index, value] of palindrome.entries()){
+            if(value == indexOf){
+                console.log(`the index of this item is [${index}] : ${value}`);
+                
                 found = true;
+                INDEX = index
                 break;
             }
         }
+        palindrome.splice(INDEX, 1);
+        console.log(`ITEM REMOVED: ${palindrome}`)
+
         if(!found){
             console.log("no item found")
         }
