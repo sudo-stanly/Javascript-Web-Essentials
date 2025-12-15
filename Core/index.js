@@ -9,4 +9,5 @@ core.intro();
 // core.func4();
 // core.func5();
 // core.func6();
-core.func7();
+// core.func7();
+core.func8();

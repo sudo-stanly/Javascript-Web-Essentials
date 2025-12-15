@@ -285,7 +285,30 @@ export default class Core {
             console.log("no item found")
         }
 
+
         
-        
+    }
+
+    func8(){
+
+        let tools = {
+            date : "2025-12-15",
+            manufacturer : "Caterpillar",
+            equipments : ["Drain Spade Shovel", "Round Point Shovel", "Flat Head Shovel", "Pick Mattock", "Sledge Hammer", "Claw Hammer", "Adjustable Wrench", "Combination Wrench Set", "Slip-Joint Pliers", "Needle-Nose Pliers", "Phillips Screwdriver", "Flathead Screwdriver", "Tape Measure", "Utility Knife", "Pry Bar", "Hex Key Set"]
+        };
+        console.log("Tools:")
+        for(const [key, value] of Object.entries(tools)){
+
+            if(!(value instanceof Array)){
+                console.log(`[${key}] : ${value}`);
+            }
+            else{
+                console.log("[Equipments] : ")
+                for(const item of value){
+                    console.log(`\t- ${item}`);
+                }
+            }
+        }
+
     }
 }
