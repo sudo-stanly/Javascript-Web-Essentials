@@ -279,11 +279,13 @@ export default class Core {
             }
         }
         palindrome.splice(INDEX, 1);
-        console.log(`ITEM REMOVED: ${palindrome}`)
+        console.log(`ITEM REMOVED\nUPDATED: ${palindrome}`)
 
         if(!found){
             console.log("no item found")
         }
 
+        
+        
     }
 }
