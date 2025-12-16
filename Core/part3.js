@@ -19,5 +19,7 @@ export default class Core{
         let string = JSON.stringify(obj);
         console.log(string);
 
+
+        
     }
 }
