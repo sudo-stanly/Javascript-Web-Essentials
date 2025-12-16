@@ -21,4 +21,24 @@ function variableScope(){
 // console.log(blockScope); undefined
 console.log(globalScope);
 
-export {intro, variableScope};
+
+
+function destructuring(){
+
+    let person = {
+        firstName:"Linus",
+        lastName:"Torvalds",
+        country:"PH"
+    };
+    // let {firstName, lastName, country ="US"} = person;
+    // console.log(firstName, lastName, country);
+
+    function display(person){
+        let {firstName, lastName, country ="US"} = person;
+        console.log(firstName, lastName, country); 
+    }
+    display(person);
+
+}
+
+export {intro, variableScope, destructuring};
