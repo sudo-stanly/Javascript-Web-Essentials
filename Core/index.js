@@ -3,7 +3,7 @@
 // import Core from "./part2.js";
 // import Core from "./part3.js";
 // import Core from "./part4.js";
-import { intro, variableScope, destructuring} from "./part4.js";
+// import { intro, variableScope, destructuring} from "./part4.js";
 // const core = new Core();
 // core.intro();
 
@@ -26,6 +26,6 @@ import { intro, variableScope, destructuring} from "./part4.js";
 // core.func1();
 // core.variableScope();
 
-intro();
-variableScope();
-destructuring();
+// intro();
+// variableScope();
+// destructuring();
