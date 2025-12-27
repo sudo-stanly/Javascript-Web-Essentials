@@ -1,0 +1,74 @@
+:root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #F5F7DC;
+    --alternative-color: silver;
+
+    --success: #0CCE6B; /*#157145*/
+    --warning: #F8C537; /*#F56416*/
+    --error: #ED254E; /*E3170A*/ /*#EF271B*/
+
+    --light-grey: #312F2F;
+    --mid-grey: #22181C; /*#0F110C*/
+    --dark-grey: #0C0C0C;
+    --dark: #000000;
+
+    --shadow: 0px 2px 6px 0px rgba(32, 30, 30, 0.2);
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main>section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+main>section>article{
+    /* border: 1px solid var(--secondary-color); */
+    /* width: 50rem;
+    max-width: 100%; */
+    width: clamp(320px, 90%, 90%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+main>section>article>*{
+    align-self: stretch;
+}
+
+main>section>article>.card{
+    width: 100%;
+    align-self: center;
+    padding: 2rem 0;
+    margin: 1rem 0;
+    cursor:pointer;
+    border-radius: 8px;
+    background-color: rgb(249, 249, 249);
+}
