@@ -14,6 +14,7 @@
     <main>
         <section>
 
+            <!-- querySelector -->
             <article>
                 <div style="padding-bottom: 1rem; border-top-left-radius: 10px; border-top-right-radius: 10px; display: flex; align-items: center;">
                     <div style="display: flex; gap: 8px;">
@@ -45,6 +46,74 @@
                         <button type="button" onclick="changeTheme()"> change </button>
                     </div>
 
+                </div>
+            </article>
+
+            <!-- querySelectorAll -->
+            <article>
+                <div
+                    style="padding-bottom: 1rem; border-top-left-radius: 10px; border-top-right-radius: 10px; display: flex; align-items: center;">
+                    <div style="display: flex; gap: 8px;">
+                        <div style="width: 12px; height: 12px; background-color: #ff5f56; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background-color: #ffbd2e; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background-color: #27c93f; border-radius: 50%;"></div>
+                    </div>
+                </div>
+                <header>
+                    <h2>querySelectorAll</h2>
+                </header>
+            
+                <div title="querySelectorAll" class="card">
+            
+                    <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
+                        <p><span class="text"> Click the button to change background </span></p>
+                        <p><span class="text"> Click the button to change background </span></p>
+                        <button type="button" onclick="changeSelectedElements()"> change </button>
+                    </div>
+
+
+                    <!-- querySelectorAll returns a nodelist liek an array with an index of 0 -->
+                    <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
+                        <p><span class="span-tag"> Add a background color to the first p element: </span></p>
+                        <p><span class="span-tag"> This is a p element. </span></p>
+                        <p><span class="span-tag"> This is a p element. </span></p>
+                        <p><span class="span-tag"> This is a p element. </span></p>
+                        <button type="button" onclick="changeSelectedElements2()"> change </button>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
+                        <p><span id="demo"> Click the button to check length: </span></p>
+                        <p><span class="span-tag2"> This is a p element. </span></p>
+                        <p><span class="span-tag2"> This is a p element. </span></p>
+                        <p><span class="span-tag2"> This is a p element. </span></p>
+                        <button type="button" onclick="checkElementsLength()"> check </button>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
+                        <p><span id="demo"> Click the button to change elements: </span></p>
+                        <p><span class="span-tag3"> This is a p element. </span></p>
+                        <p><span class="span-tag3"> This is a p element. </span></p>
+                        <p><span class="span-tag3"> This is a p element. </span></p>
+                        <button type="button" onclick="changeAllElements()"> check </button>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
+                        <p><span id="demo"> Click the button to change the background color of every p element where the parent is a div element: </span></p>
+                        <p><span> This is a p element. </span></p>
+                        <p><span> This is a p element. </span></p>
+                        <p><span> This is a p element. </span></p>
+                        <button type="button" onclick="changeAllElements()"> check </button>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
+                        <p><span id="demo"> Click the button to set the background color of all h3 and span elements: </span></p>
+                        <p><span> This is a p element. </span></p>
+                        <p><span> This is a p element. </span></p>
+                        <p><span> This is a p element. </span></p>
+                        <h3>Hello, World!</h3>
+                        <button type="button" onclick="changeAllElements()"> check </button>
+                    </div>
+            
                 </div>
             </article>
 
