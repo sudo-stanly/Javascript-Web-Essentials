@@ -10,7 +10,7 @@ export default class Dom{
         if(x){ x.textContent=this.message; }
         return x;
     }
-
+    
     
     
 }
