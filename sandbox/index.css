@@ -63,6 +63,9 @@ main>section>article{
 main>section>article>*{
     align-self: stretch;
 }
+p,span{
+    font-weight: 400;
+}
 
 main>section>article>.card{
     width: 100%;
@@ -71,4 +74,5 @@ main>section>article>.card{
     margin: 1rem 0;
     border-radius: 8px;
     background-color: rgb(249, 249, 249);
+    padding: 1rem;
 }
