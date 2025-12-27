@@ -29,7 +29,7 @@ body{
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 main{
@@ -44,7 +44,7 @@ main>section{
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 main>section>article{
@@ -77,6 +77,11 @@ p,span{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+main>section>article>.card>div> p, span {
+    align-self: stretch;
+    min-width: 0;
+}
+
 main>section>article:hover{
     transition: 0.3s ease-in-out;
     box-shadow: 0px 2px 6px 0px rgba(32, 30, 30, 0.486);
@@ -95,6 +100,7 @@ main>section>article>.card{
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+    white-space: nowrap;
 }
 @keyframes slideUp{
     0%{
@@ -124,4 +130,23 @@ article.dark-theme{
 }
 .card.dark-theme{
     background-color: var(--light-grey);
+}
+
+
+
+
+/* change style of selected elements */
+.text.background{
+    background-color: var(--error);
+    color: var(--primary-color);
+}
+
+.span-tag.background{
+    background-color: var(--error);
+    color: var(--primary-color);
+}
+
+#demo.background{
+    background-color: var(--success);
+    color: var(--primary-color);
 }
