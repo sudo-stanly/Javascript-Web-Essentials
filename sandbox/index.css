@@ -29,6 +29,7 @@ body{
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    background-color: var(--secondary-color);
 }
 
 main{
@@ -68,7 +69,6 @@ main>section>article>.card{
     align-self: center;
     padding: 2rem 0;
     margin: 1rem 0;
-    cursor:pointer;
     border-radius: 8px;
     background-color: rgb(249, 249, 249);
 }
