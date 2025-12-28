@@ -134,7 +134,7 @@
                 <div title="HTML Manipulation" class="card">
             
                     <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
-                        <p><span><b>Comparison textContent, innerText , innerHTML</b></span></p>
+                        <p title="Comparison textContent, innerText , innerHTML"><span><b>Comparison textContent, innerText , innerHTML</b></span></p>
                         <!-- <p><span><b>Click the button to change content ():</b></span></p>
                         <p><span> reads HTML & ignores hidden elements: <span class="sample-text"> Hello, World! </span> </span></p>
                         <button type="button" onclick="changeTextContent()"> change </button>
@@ -146,17 +146,17 @@
                         <p><span><b>Click the button to change content:</b></span></p>
                         <button type="button" onclick="changeInnerText()"> change </button> -->
                         <ul>
-                            <li>innerHTML: returns all HTML elements and can be changed with another element.</li>
-                            <li>textContent: returns all text and hidden texts.</li>
-                            <li>innerText: returns only the text and ignores hidden texts.</li>
+                            <li title="innerHTML: returns all HTML elements and can be changed with another element.">innerHTML: returns all HTML elements and can be changed with another element.</li>
+                            <li title="textContent: returns all text and hidden texts.">textContent: returns all text and hidden texts.</li>
+                            <li title="innerText: returns only the text and ignores hidden texts.">innerText: returns only the text and ignores hidden texts.</li>
                             <li style="visibility:hidden;" class="hidden-text">This is a hidden text.</li>
                         </ul>
                         <button id="showHiddenBtn" type="button" onclick="showHiddenText()"> show hidden text </button>
 
-                        <p><span><b>Updating content with the three:</b></span></p>
-                        <p><span>Description: <span id="text-description"></span></span></p>
+                        <p title="Updating content with the three:"><span><b>Updating content with the three:</b></span></p>
+                        <p title="Description:"><span>Description: <span id="text-description"></span></span></p>
 
-                        <p><span><i>Programming languages:</i></span></p>
+                        <p title="Programming languages:"><span><i>Programming languages:</i></span></p>
                         <ul class="languages-list"></ul>
                         <button type="button" onclick="updateContent('innerHTML')"> update with innerHTML </button>
                         <button type="button" onclick="updateContent('innerText')"> update with innerText </button>

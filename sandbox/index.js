@@ -113,6 +113,7 @@ function updateContent(x){
     switch(x){
         case 'innerHTML':
             document.getElementById("text-description").innerText="innerHTML returns a string format since it recognizes the tag and formatting.";
+            document.getElementById("text-description").title="innerHTML returns a string format since it recognizes the tag and formatting.";
             langList.innerHTML=`
                 <li>JavaScript</li>
                 <li>Python</li>
@@ -123,6 +124,7 @@ function updateContent(x){
             break;
         case 'innerText':
             document.getElementById("text-description").innerText="innerText ignores the tag and renders it as a string.";
+            document.getElementById("text-description").title="innerText ignores the tag and renders it as a string.";
             langList.innerText = `
                 <li>JavaScript</li>
                 <li>Python</li>
@@ -133,6 +135,7 @@ function updateContent(x){
             break;
         case 'textContent':
             document.getElementById("text-description").innerText="textContent also ignores the tag and renders it as a string but ignores whitespaces and breaking lines.";
+            document.getElementById("text-description").title="textContent also ignores the tag and renders it as a string but ignores whitespaces and breaking lines.";
             langList.textContent = `
                 <li>JavaScript</li>
                 <li>Python</li>
