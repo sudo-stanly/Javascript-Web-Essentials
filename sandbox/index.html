@@ -32,7 +32,7 @@
                     </div>
 
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <p><span class="messsage_content"> Click the button to change content </span></p>
+                        <p><span class="message_content"> Click the button to change content </span></p>
                         <button type="button" onclick="changeContent()"> change </button>
                     </div>
 
@@ -113,6 +113,57 @@
                         <h3>Hello, World!</h3>
                         <button type="button" onclick="changeAllElements()"> check </button>
                     </div>
+            
+                </div>
+            </article>
+
+            <!-- HTML manipulation -->
+            <article>
+                <div
+                    style="padding-bottom: 1rem; border-top-left-radius: 10px; border-top-right-radius: 10px; display: flex; align-items: center;">
+                    <div style="display: flex; gap: 8px;">
+                        <div style="width: 12px; height: 12px; background-color: #ff5f56; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background-color: #ffbd2e; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background-color: #27c93f; border-radius: 50%;"></div>
+                    </div>
+                </div>
+                <header>
+                    <h2>HTML Manipulation</h2>
+                </header>
+            
+                <div title="HTML Manipulation" class="card">
+            
+                    <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start;">
+                        <p><span><b>Comparison textContent, innerText , innerHTML</b></span></p>
+                        <!-- <p><span><b>Click the button to change content ():</b></span></p>
+                        <p><span> reads HTML & ignores hidden elements: <span class="sample-text"> Hello, World! </span> </span></p>
+                        <button type="button" onclick="changeTextContent()"> change </button>
+
+                        <nav>
+                            <a><p><span class="">innerText changes texts inside:</span></p></a>
+                            <a><p style="display: none;"><span class=""><b>Hello, World!</b></span></p></a>
+                        </nav>
+                        <p><span><b>Click the button to change content:</b></span></p>
+                        <button type="button" onclick="changeInnerText()"> change </button> -->
+                        <ul>
+                            <li>innerHTML: returns all HTML elements and can be changed with another element.</li>
+                            <li>textContent: returns all text and hidden texts.</li>
+                            <li>innerText: returns only the text and ignores hidden texts.</li>
+                            <li style="visibility:hidden;" class="hidden-text">This is a hidden text.</li>
+                        </ul>
+                        <button id="showHiddenBtn" type="button" onclick="showHiddenText()"> show hidden text </button>
+
+                        <p><span><b>Updating content with the three:</b></span></p>
+                        <p><span>Description: <span id="text-description"></span></span></p>
+
+                        <p><span><i>Programming languages:</i></span></p>
+                        <ul class="languages-list"></ul>
+                        <button type="button" onclick="updateContent('innerHTML')"> update with innerHTML </button>
+                        <button type="button" onclick="updateContent('innerText')"> update with innerText </button>
+                        <button type="button" onclick="updateContent('textContent')"> update with textContent </button>
+
+                   </div>
+            
             
                 </div>
             </article>
