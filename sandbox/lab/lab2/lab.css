@@ -142,3 +142,13 @@ ul, li{
 .card{
     background-color: var(--light-grey);
 }
+
+
+form{
+    /* outline-style: dashed;
+    outline-color: rgb(215, 215, 215);
+    outline-width: 2px; */
+    outline: dashed rgb(215, 215, 215) 2px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
